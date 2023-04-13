@@ -1,7 +1,7 @@
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '692850f7b6msh402daba8277d965p1f4a13jsnc25adf665791',
+		'X-RapidAPI-Key': '36fd2b6778msh27c43f62757086fp1cae6bjsn7028619687ad',
 		'X-RapidAPI-Host': 'actor-movie-api1.p.rapidapi.com'
 	}
 };
