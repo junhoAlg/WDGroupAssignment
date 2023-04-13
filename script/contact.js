@@ -1,7 +1,20 @@
 const form = document.getElementById('contactForm')
+const confirmationText = document.querySelector('.confirmation-text')
 form.addEventListener('submit',function(e){
 	e.preventDefault()
-	validateForm()}
+	let validate= validateForm()
+	if (validate){
+		form.name.value=''
+		 form.email.value=''
+		 form.message.value=''
+
+		
+		confirmationText.style= "display: block;"
+	}
+	if (!validate){
+		confirmationText.style= "display: none;"
+	}
+}
 )
 
 

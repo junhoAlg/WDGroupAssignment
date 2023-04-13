@@ -2416,11 +2416,11 @@ function buildCarousel(jsonData)
         let template = `
             <div class="carousel-item ${i==4? "active":""} rounded" data-bs-interval="5000">
                 <div class="row">
-                    <div class="col-5 p-0">
-                    <img src="${jsonData[i].image}"
+                    <div class="col-lg-5 col-md-0 p-0">
+                    <img class="d-none  d-lg-block" src="${jsonData[i].image}"
                     class="d-block rounded" alt="${jsonData[i].title}">
                     </div>
-                    <div class="col-7 border rounded detail text-white ">
+                    <div class="p-2 col-lg-7 col-md-12 col-sm-12 border rounded detail text-white ">
                         <p>
                             <h2>${jsonData[i].title}</h2>
                             rank :${jsonData[i].rank} <br>
